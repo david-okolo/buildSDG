@@ -1,0 +1,10 @@
+node_modules
+build
+docs
+docker
+test
+.vscode
+koa/views
+src/generated
+src/database
+src/app/models
