@@ -13,7 +13,7 @@
     "test": "__tests__"
   },
   "scripts": {
-    "pretest": "sequelize-cli db:migrate --env test",
+    "pretest": "sequelize-cli db:create --env test && sequelize-cli db:migrate --env test",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
