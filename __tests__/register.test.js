@@ -31,7 +31,7 @@ describe('POST /register Tests', () => {
 
     const { body, status } = await request(app).post(route).send(user);
     expect(status).toBe(200);
-    expect(await TestDB.has('users', {
+    expect(await TestDB.has('Users', {
       name: 'Jack Rich',
       username: '09076421865'
     })).toBeTruthy();
